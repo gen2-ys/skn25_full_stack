@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+  <h1>글 목록</h1>
+  <a href="{% url 'post-create' %}">새 글 쓰기</a>
+  <ul>
+    {% for post in posts %}
+      <li><a href="{% url 'post-detail' post.pk %}">{{ post.title }}</a></li>
+    {% endfor %}
+  </ul>
+{% endblock %}

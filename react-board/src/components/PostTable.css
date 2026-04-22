@@ -1,0 +1,67 @@
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.post-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* 테이블 헤더 스타일 */
+.post-table th {
+  padding: 12px 8px;
+  border-top: 2px solid #343a40;
+  border-bottom: 1px solid #dee2e6;
+  font-weight: bold;
+  background-color: #f8f9fa;
+  color: #495057;
+}
+
+/* 각 열의 너비 비율 지정 */
+.col-recommend { width: 8%; }
+.col-title { width: 50%; }
+.col-author { width: 15%; }
+.col-views { width: 10%; }
+.col-date { width: 17%; }
+
+/* 테이블 본문 행 스타일 */
+.post-table td {
+  padding: 12px 8px;
+  border-bottom: 1px solid #e9ecef;
+  color: #495057;
+  vertical-align: middle;
+}
+
+/* 제목 열 좌측 정렬 및 링크 스타일 */
+.post-table .post-title-cell {
+  text-align: left;
+}
+
+.post-table .post-title-cell a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.post-table .post-title-cell a:hover {
+  text-decoration: underline;
+}
+
+/* 추천수 뱃지 스타일 */
+.badge-recommend {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background-color: #f1f3f5;
+  color: #adb5bd;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* 추천수가 있을 경우의 강조 스타일 */
+.badge-recommend.active {
+  background-color: #ffc107;
+  color: #212529;
+}
